@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Deneme UI-Kits</title>
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/core.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/margin.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/datepicker.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+
+
+    <!-- Core JS files -->
+    <script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/plugins/ui/nicescroll.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/ui/drilldown.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/ui/fab.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/notifications/jgrowl.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/notifications/jgrowl.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/plugins/pickers/daterangepicker.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/anytime.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.time.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/legacy.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/tables/datatables/extensions/buttons.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/tables/datatables/extensions/jszip/jszip.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/tables/datatables/extensions/pdfmake/pdfmake.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/tables/datatables/extensions/pdfmake/vfs_fonts.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/core/app.js"></script>
+    <!-- /theme JS files -->
+
+
+
+
+</head>
+<body>
+
+<!--Nvbar başlangıç-->
+<div class="navbar navbar-inverse">
+    <!-- Navbar header -->
+    <div class="navbar-header">
+        <a class="navbar-brand" href="ekipman-servis-takip.html">
+            <img src="assets/images/logo.png" alt="logo_yazısı">
+        </a>
+    </div>
+    <!-- /Navbar header -->
+
+    <!-- Left nav -->
+    <ul class="nav navbar-nav">
+        <li><a href="ekipman-servis-takip.html">Ekipman Servis Takip</a></li>
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                <span>STOK Takip</span>
+                <i class="caret"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="stok-takip-giris.html">Malzeme Giriş</a></li>
+                <li><a href="stok-takip-cikis.html">Malzeme Çıkış</a></li>
+            </ul>
+        </li>
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                <span>Tanımlamalar</span>
+                <i class="caret"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="sarf-malzeme-tanımlama.html">Sarf Malzeme Tanımlama</a></li>
+                <li><a href="ekipman-tanimlama.html">Ekipman Tanımlama</a></li>
+                <li><a href="kullanici-tanimlama.html">Kullanıcı Tanımlama</a></li>
+            </ul>
+        </li>
+    </ul>
+    <!-- /left nav -->
+
+
+    <!-- Right nav -->
+    <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown dropdown-user">
+            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                <img src="assets/images/user.png">
+                <span>Selim</span>
+                <i class="caret"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                    <a href="#"><i class="icon-switch2"></i>Çıkış Yap</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!-- /right nav -->
+</div>
+<!--navbar bitiş -->
+<!--Ekipman Başlangıç-->
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-md-12 margin-top-20">
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h6 class="panel-title">Stok Takip - Çıkış</h6>
+                    <div class="heading-elements">
+                        <ul class="icons-list">
+                            <li><a href="#"><i class="icon-plus2" title="Yeni"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="panel-body background-gri" >
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <select class="form-control" id="">
+                                <option selected disabled>Malzeme</option>
+                                <option>Notebook</option>
+                                <option>Scanner</option>
+                                <option>Printer</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control text-semibold" placeholder="Çıkış Adedi">
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control datepicker" placeholder="Çıkış Tarihi">
+                    </div>
+                    <div class="col-md-4">
+                        <textarea class="form-control" placeholder="Açıklama" rows="4"></textarea>
+                    </div>
+                    <div class="col-md-1">
+                        <input class="btn btn-primary" href="" value="Kaydet"><br><br>
+                        <input class="btn btn-primary" href="" value="İptal">
+                    </div>
+
+                    <div class="col-md-12 margin-top-30 cerceve" >
+                        <table class="table table-striped">
+                            <thead>
+                            <th>Malzeme</th>
+                            <th>Çıkış Adedi</th>
+                            <th>Çıkış Tarihi</th>
+                            <th>Açıklama</th>
+                            <th>İşlem</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Harddisk</td>
+                                    <td>20</td>
+                                    <td>24.06.2016</td>
+                                    <td>açıklama yok</td>
+                                    <td>
+                                        <a href="#"><span class="icon icon-pencil" aria-hidden="true">&nbsp;&nbsp;</span></a>
+                                        <a href="#"><span class="icon icon-trash" aria-hidden="true"></span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Harddisk</td>
+                                    <td>20</td>
+                                    <td>24.06.2016</td>
+                                    <td>açıklama yok</td>
+                                    <td>
+                                        <a href="#"><span class="icon icon-pencil" aria-hidden="true">&nbsp;&nbsp;</span></a>
+                                        <a href="#"><span class="icon icon-trash" aria-hidden="true"></span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Harddisk</td>
+                                    <td>20</td>
+                                    <td>24.06.2016</td>
+                                    <td>açıklama yok</td>
+                                    <td>
+                                        <a href="#"><span class="icon icon-pencil" aria-hidden="true">&nbsp;&nbsp;</span></a>
+                                        <a href="#"><span class="icon icon-trash" aria-hidden="true"></span></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-2 col-md-push-10 margin-top-20">
+                        <input class="btn btn-primary" value="Excel Aktar">
+                    </div>
+
+
+                    <div class="col-md-12 margin-top-30 cerceve" >
+                        <table class="table table-striped">
+                            <thead>
+                            <th>Malzeme</th>
+                            <th>Max</th>
+                            <th>Min</th>
+                            <th>Mevcut</th>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Harddisk</td>
+                                <td>40</td>
+                                <td>5</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Harddisk</td>
+                                <td>40</td>
+                                <td>5</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Harddisk</td>
+                                <td>40</td>
+                                <td>5</td>
+                                <td>15</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!--Ekipman bitiş-->
+
+
+<!--Date picker başlangıç-->
+<script>
+    $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 15 // Creates a dropdown of 15 years to control year
+    });
+
+</script>
+<!--Datepicker bitiş-->
+
+
+
+
+
+
+</body>
+</html>
